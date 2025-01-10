@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d517725aad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!------------header-------------->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Engr</span><br> Ipaye From Nigeria</h1>
+        </div>
+    </div>
+</div>
+
+
+<!------------ABOUT-------------->
+    <div id="about"> 
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.png">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m a Software engineer who has turned years of freelancing into a full-time career. Being a back-end developer allows 
+                    me to not only develop client-facing apps and websites but also develop it with cutting edge backend support. 
+                    I specialize in Spring boot, Testing, Restful API's and Software development.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem-Solving</span> <br>Core Java, Data Structure & Algorithm</li>
+                            <li><span>Spring-Boot</span> <br>Spring-based Applications Microservices</li>
+                            <li><span>Database Management & Software Testing</span> <br>SQL JDBC Hibernate ORM-frameworks Testing Applications</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span> <br>Software Engineer at freelancing</li>
+                            <li><span>2018-2021</span> <br>Java Developer at Gilah Global limited</li>
+                            <li><span>2015-2018</span> <br>Senior Product Designer at Neno Int'l Limited</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-Current</span> <br>B.Sc Electronic and Computer Engineer <br>from Lagos State University</li>
+                            <li><span>2014</span> <br>WAEC, NECO & UTME <br>from Faith Comprehensive Int'l Secondaery School</li>
+
+                        </ul>
+                    </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+ 
+<!---------------------services---------------------------->
+
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                     <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Spring-Boot</h2>
+                        <p>Building Secure Spring-based Applications, Microservices, web appllications and console applications</p>
+                        <a href="https://www.linkedin.com/posts/engripaye_innovation-management-digitalmarketing-activity-7277839498304999424-o82n?utm_source=share&utm_medium=member_desktop">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Management</h2>
+                        <p>Interacting with databases, trouble-shooting and interpreting non-verbal cues</p>
+                        <a href="https://www.linkedin.com/posts/engripaye_technology-future-futurism-activity-7201583872134856705-4SQT?utm_source=share&utm_medium=member_desktop">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-apple"></i>
+                        <h2>Microservices</h2>
+                        <p>Building Standalone software application to form bigger solutions in the Tech world</p>
+                        <a href="https://www.linkedin.com/posts/engripaye_running-docker-composeyml-on-my-e-commerce-activity-7214240942814351361-mFlK?utm_source=share&utm_medium=member_desktop">Learn more</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------Portfolio---------------------------->
+
+
+    <div id="portfolio">s
+
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Microservices Banking App</h3>
+                        <p>This application solves relevant bank issues and system upgrades.
+                           View Project on my github repo.
+                        </p>
+                        <a href="https://github.com/IpayeBabatunde/banking-app"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Spring-base Application</h3>
+                        <p>This showcases Java Spring framework & security in the real tech world.
+                           View Project on my github repo.
+                        </p>
+                        <a href="https://github.com/IpayeBabatunde/spring-oauth2"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Database Management</h3>
+                        <p>Building Restful API's, Interacting with database, SQL, Hibernate, Postgres
+                          View Project on my github repo.
+                        </p>
+                        <a href="https://github.com/IpayeBabatunde/ems-capstone-project"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+     <!---------------------Contact---------------------------->
+
+     <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> fineboyhakim@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0814055049</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/profile.php?id=61571436088756"><i class="fab fa-facebook"></i></a>
+                        <a href="https://Twitter.com/engr_ipaye"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/engripayebabatunde"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/engripaye"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Cv.pdf" download class="btn btn2">Download My Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Engr. Ipaye |  <i class="fa-solid fa-computer"></i> Software Engineer </p>
+        </div>
+     </div>
+
+    <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabContents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabContent of tabContents){
+                    tabContent.classList.remove("active-tab")
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxFWRldmmsWuyq1TyPoZz_AqzrV7RGZ9GfNYlkkw8UVDgqUZRYUofsWOVSXETBUzR0PmQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
